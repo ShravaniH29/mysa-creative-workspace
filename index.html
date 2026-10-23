@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mysa · Keep the idea, the work and the decisions connected</title>
+  <meta name="description" content="Mysa is a creative collaboration workspace that keeps a client's intent, the work, feedback, decisions and approvals connected.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" id="skip-link" href="#main">Skip to content</a>
+  <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+
+  <!-- =========================================================
+       LANDING PAGE
+       ========================================================= -->
+  <div id="view-landing">
+    <header class="site-nav">
+      <div class="container site-nav__inner">
+        <a class="wordmark" href="#/" aria-label="Mysa home">mysa<span class="wordmark__dot" aria-hidden="true"></span></a>
+        <nav class="site-nav__links" aria-label="Main">
+          <a href="#problem">The problem</a>
+          <a href="#how">How it works</a>
+          <a href="#product">Why Mysa</a>
+        </nav>
+        <a class="btn btn--primary btn--small" href="#/projects">Open workspace</a>
+      </div>
+    </header>
+
+    <main id="main">
+      <!-- HERO -->
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="container hero__grid">
+          <div class="hero__copy">
+            <p class="eyebrow">A workspace for designers and their clients</p>
+            <h1 id="hero-title" class="hero__title">Keep the idea, the work and the decisions connected.</h1>
+            <p class="hero__lede">Mysa holds a creative project together: the brief in your client's own words, the work, the feedback pinned to it, and every decision that shaped the next version.</p>
+            <div class="hero__actions">
+              <a class="btn btn--primary" href="#/projects">Open the demo workspace</a>
+              <a class="btn btn--ghost" href="#how">See how it works <span aria-hidden="true">→</span></a>
+            </div>
+            <p class="hero__note">The demo runs in your browser. No account needed.</p>
+          </div>
+
+          <!-- Product preview: a cropped view into a real Mysa project, built in HTML/CSS -->
+          <div class="preview" role="img" aria-label="Mysa workspace preview: Fenwick House brand identity, Version 03 in review, a client note pinned to the brass detail, and Decision 02 agreed by both client and designer but not yet approved.">
+            <div class="pv-back" aria-hidden="true">
+              <p class="pv-tab">Direction · Agreed</p>
+              <p class="pv-back__quote">“Warm, but not rustic.”</p>
+              <ul class="pv-back__lines">
+                <li><span>Warm</span> through material, not nostalgia.</li>
+                <li><span>Considered</span> through restraint and good paper.</li>
+                <li><span>Coastal</span> in light and colour, never anchors and rope.</li>
+              </ul>
+            </div>
+
+            <div class="pv-sheet" aria-hidden="true">
+              <div class="pv-bar">
+                <span class="pv-bar__project">Fenwick House <em>Brand identity</em></span>
+                <span class="status status--review"><span class="status__mark"></span>V03 · In review</span>
+              </div>
+              <div class="pv-body">
+                <div class="pv-art">
+                  <span class="pv-art__name">Fenwick House</span>
+                  <span class="pv-art__rule"></span>
+                  <span class="pv-art__sub">Whitstable · Est. 1931</span>
+                  <span class="pin pv-art__pin">1</span>
+                </div>
+                <div class="pv-margin">
+                  <div class="pv-note">
+                    <p class="pv-note__meta"><span class="pin pin--small">1</span> Clara · Client · Brass detail</p>
+                    <p class="pv-note__text">“I like the brass. Could the room-number style carry into signage?”</p>
+                    <p class="pv-note__link">Relates to <strong>Considered</strong></p>
+                  </div>
+                  <div class="pv-record">
+                    <p class="pv-record__id">Decision 02 · Agreed</p>
+                    <p class="pv-record__text">Give the wordmark more air.</p>
+                    <p class="pv-record__meta">Agreed by Clara and Ravi</p>
+                  </div>
+                  <p class="pv-approval"><span class="status status--draft"><span class="status__mark"></span>Not yet approved</span></p>
+                </div>
+              </div>
+              <ol class="thread">
+                <li class="is-done">Direction</li>
+                <li class="is-done">Work</li>
+                <li class="is-done">Feedback</li>
+                <li class="is-done">Decision</li>
+                <li class="is-current">Version 03</li>
+                <li>Approval</li>
+              </ol>
+            </div>
+
+            <div class="pv-ref" aria-hidden="true">
+              <div class="pv-ref__swatches"><span style="background:#B08A4A"></span><span style="background:#23392F"></span><span style="background:#E8E1D3"></span></div>
+              <p class="pv-ref__title">Reference · Brass room numbers</p>
+              <p class="pv-ref__note">Small, solid, made to last. Detail over decoration.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- THE PROBLEM -->
+      <section id="problem" class="problem" aria-labelledby="problem-title">
+        <div class="container">
+          <div class="section-head">
+            <p class="eyebrow">The problem</p>
+            <h2 id="problem-title" class="section-title">Briefs don't fail all at once. Meaning slips at every handover.</h2>
+          </div>
+          <ol class="chain">
+            <li class="chain__step">
+              <p class="chain__label">What Clara imagines</p>
+              <p class="chain__quote">Her grandmother's guesthouse, morning light on the harbour.</p>
+            </li>
+            <li class="chain__step">
+              <p class="chain__label">What she says</p>
+              <p class="chain__quote">“Warm, but not rustic.”</p>
+            </li>
+            <li class="chain__step chain__step--slipping">
+              <p class="chain__label">What gets heard</p>
+              <p class="chain__quote">“Warm.”</p>
+            </li>
+            <li class="chain__step chain__step--slipping">
+              <p class="chain__label">What gets made</p>
+              <p class="chain__quote">Driftwood textures and a rope monogram.</p>
+            </li>
+            <li class="chain__step chain__step--lost">
+              <p class="chain__label">What she reacts to</p>
+              <p class="chain__quote">“This isn't what I meant.”</p>
+            </li>
+          </ol>
+          <p class="problem__aside">By the time a client says it, the original intent is buried in emails, calls and file names. Mysa keeps it in view, next to the work, for the whole project.</p>
+        </div>
+      </section>
+
+      <!-- HOW IT WORKS -->
+      <section id="how" class="how" aria-labelledby="how-title">
+        <div class="container">
+          <div class="section-head section-head--split">
+            <div>
+              <p class="eyebrow">How Mysa works</p>
+              <h2 id="how-title" class="section-title">One thread runs from the brief to the approved work.</h2>
+            </div>
+            <p class="section-head__text">Each step keeps a reference to the one before it, so anyone can see why the work looks the way it does.</p>
+          </div>
+
+          <ol class="stages">
+            <li class="stage">
+              <p class="stage__index">01 · Direction</p>
+              <h3 class="stage__title">Agree what the words mean</h3>
+              <p class="stage__text">Turn the client's adjectives into shared phrases you can both point to later.</p>
+              <div class="artefact artefact--direction">
+                <p class="artefact__quote">“Coastal in light and colour, never anchors and rope.”</p>
+                <span class="status status--agreed"><span class="status__mark"></span>Agreed</span>
+              </div>
+            </li>
+            <li class="stage">
+              <p class="stage__index">02 · Work</p>
+              <h3 class="stage__title">Show the work as work</h3>
+              <p class="stage__text">Versions are presented large, never as a row of file names.</p>
+              <div class="artefact artefact--work">
+                <span class="artefact__art">Fenwick House</span>
+                <span class="artefact__meta">Version 02</span>
+              </div>
+            </li>
+            <li class="stage">
+              <p class="stage__index">03 · Feedback</p>
+              <h3 class="stage__title">Pin feedback to the thing</h3>
+              <p class="stage__text">A note belongs to a version and an area, not a general thread.</p>
+              <div class="artefact artefact--note">
+                <p class="artefact__meta"><span class="pin pin--small">2</span> Wordmark · V02</p>
+                <p class="artefact__text">“The name feels a little tight, like it's holding its breath.”</p>
+              </div>
+            </li>
+            <li class="stage">
+              <p class="stage__index">04 · Decision</p>
+              <h3 class="stage__title">Record what you agreed</h3>
+              <p class="stage__text">What changes, what stays and why. Both of you agree before work moves on.</p>
+              <div class="artefact artefact--record">
+                <p class="artefact__meta">Decision 02</p>
+                <p class="artefact__text">Give the wordmark more air.</p>
+                <p class="artefact__small">Changes: letter spacing · Stays: serif, palette</p>
+              </div>
+            </li>
+            <li class="stage">
+              <p class="stage__index">05 · Approval</p>
+              <h3 class="stage__title">Approve the work itself</h3>
+              <p class="stage__text">Agreeing on a decision is not approving a version. Mysa keeps them apart.</p>
+              <div class="artefact artefact--approval">
+                <p class="artefact__meta">Version 03</p>
+                <span class="status status--review"><span class="status__mark"></span>Awaiting approval</span>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- PRODUCT DETAILS -->
+      <section id="product" class="details" aria-labelledby="details-title">
+        <div class="container details__grid">
+          <div class="section-head">
+            <p class="eyebrow">Why not a project tool</p>
+            <h2 id="details-title" class="section-title">Project tools track the work. Mysa keeps the reasons.</h2>
+          </div>
+          <table class="compare">
+            <caption class="visually-hidden">What a project tool keeps compared with what Mysa keeps</caption>
+            <thead>
+              <tr><th scope="col">A project tool keeps</th><th scope="col">Mysa keeps</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Tasks and due dates</td><td>The brief in the client's own words</td></tr>
+              <tr><td>Comment threads</td><td>Feedback pinned to the exact version and area</td></tr>
+              <tr><td>Status changes</td><td>Decisions with what changes, what stays and why</td></tr>
+              <tr><td>The latest file</td><td>Every version, and the decision that produced it</td></tr>
+              <tr><td>A checkbox called “approved”</td><td>Agreement on decisions and approval of work, kept separate</td></tr>
+            </tbody>
+          </table>
+          <div class="audiences">
+            <div class="audience">
+              <p class="eyebrow">For the designer</p>
+              <p class="audience__text">Every revision has a reason you can point to.</p>
+            </div>
+            <div class="audience">
+              <p class="eyebrow">For the client</p>
+              <p class="audience__text">You can see what was agreed, and exactly what you're approving.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CLOSING -->
+      <section class="closing" aria-labelledby="closing-title">
+        <div class="container closing__inner">
+          <p class="eyebrow eyebrow--on-dark">Start with one project</p>
+          <h2 id="closing-title" class="closing__title">Show the work. Keep the reasons.</h2>
+          <div class="closing__actions">
+            <a class="btn btn--light" href="#/projects">Open the demo workspace</a>
+            <button type="button" class="btn btn--outline-light" data-action="new-project-from-landing">Start a new project</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container site-footer__inner">
+        <div>
+          <a class="wordmark wordmark--small" href="#/" aria-label="Mysa home">mysa<span class="wordmark__dot" aria-hidden="true"></span></a>
+          <p class="site-footer__text">A creative collaboration workspace for designers and their clients. Prototype, 2026.</p>
+        </div>
+        <nav class="site-footer__links" aria-label="Footer">
+          <a href="#problem">The problem</a>
+          <a href="#how">How it works</a>
+          <a href="#/projects">Workspace demo</a>
+        </nav>
+      </div>
+    </footer>
+  </div>
+
+  <!-- =========================================================
+       WORKSPACE (rendered by app.js)
+       ========================================================= -->
+  <div id="view-app" class="app" hidden>
+    <aside class="rail" aria-label="Workspace navigation">
+      <a class="wordmark wordmark--rail" href="#/" aria-label="Back to the Mysa site">mysa<span class="wordmark__dot" aria-hidden="true"></span></a>
+      <nav id="rail-nav" class="rail__nav" aria-label="Project sections"></nav>
+      <div class="rail__foot">
+        <button type="button" class="rail__reset" data-action="reset-demo">Reset demo data</button>
+      </div>
+    </aside>
+
+    <div class="app__main">
+      <header class="appbar">
+        <nav id="appbar-crumbs" class="appbar__crumbs" aria-label="Breadcrumb"></nav>
+        <div class="role-switch" role="group" aria-label="Prototype view">
+          <span class="role-switch__label">Prototype view</span>
+          <button type="button" class="role-switch__btn" data-action="set-role" data-role="designer" aria-pressed="true">Designer</button>
+          <button type="button" class="role-switch__btn" data-action="set-role" data-role="client" aria-pressed="false">Client</button>
+        </div>
+      </header>
+      <main id="app-content" class="app__content" tabindex="-1"></main>
+    </div>
+  </div>
+
+  <!-- New project dialog -->
+  <dialog id="dlg-project" class="dialog" aria-labelledby="dlg-project-title">
+    <form class="dialog__form" data-form="project" novalidate>
+      <header class="dialog__head">
+        <p class="eyebrow">New project</p>
+        <h2 id="dlg-project-title" class="dialog__title">Start with the brief</h2>
+      </header>
+      <div class="field">
+        <label for="f-name">Project name</label>
+        <input id="f-name" name="name" type="text" required maxlength="60" autocomplete="off">
+      </div>
+      <div class="field-row">
+        <div class="field">
+          <label for="f-client">Client name</label>
+          <input id="f-client" name="client" type="text" required maxlength="40" autocomplete="off">
+        </div>
+        <div class="field">
+          <label for="f-designer">Your name</label>
+          <input id="f-designer" name="designer" type="text" required maxlength="40" autocomplete="name">
+        </div>
+      </div>
+      <div class="field">
+        <label for="f-type">Type of work</label>
+        <select id="f-type" name="type">
+          <option>Brand identity</option>
+          <option>Packaging</option>
+          <option>Editorial</option>
+          <option>Website</option>
+          <option>Other</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="f-intent">The brief, in the client's words</label>
+        <textarea id="f-intent" name="intent" rows="4" required maxlength="400"></textarea>
+        <p class="field__hint">Quote them. This becomes the starting point for the creative direction.</p>
+      </div>
+      <p class="form-error" role="alert" hidden></p>
+      <footer class="dialog__foot">
+        <button type="button" class="btn btn--secondary" data-action="close-dialog">Cancel</button>
+        <button type="submit" class="btn btn--primary">Create project</button>
+      </footer>
+    </form>
+  </dialog>
+
+  <!-- New decision dialog -->
+  <dialog id="dlg-decision" class="dialog" aria-labelledby="dlg-decision-title">
+    <form class="dialog__form" data-form="decision" novalidate>
+      <header class="dialog__head">
+        <p class="eyebrow" id="dlg-decision-eyebrow">New decision</p>
+        <h2 id="dlg-decision-title" class="dialog__title">Record what you're deciding</h2>
+      </header>
+      <div class="field">
+        <label for="d-title">Short title</label>
+        <input id="d-title" name="title" type="text" required maxlength="60" autocomplete="off">
+      </div>
+      <div class="field">
+        <label for="d-statement">The decision</label>
+        <textarea id="d-statement" name="statement" rows="2" required maxlength="240"></textarea>
+      </div>
+      <div class="field-row">
+        <div class="field">
+          <label for="d-changes">What changes</label>
+          <textarea id="d-changes" name="changes" rows="3" required maxlength="400"></textarea>
+          <p class="field__hint">One item per line.</p>
+        </div>
+        <div class="field">
+          <label for="d-stays">What stays</label>
+          <textarea id="d-stays" name="stays" rows="3" required maxlength="400"></textarea>
+          <p class="field__hint">One item per line.</p>
+        </div>
+      </div>
+      <div class="field">
+        <label for="d-why">Why</label>
+        <textarea id="d-why" name="why" rows="2" required maxlength="300"></textarea>
+      </div>
+      <fieldset class="field sources">
+        <legend>Based on this feedback</legend>
+        <div id="dlg-decision-sources" class="sources__list"></div>
+      </fieldset>
+      <p class="form-error" role="alert" hidden></p>
+      <footer class="dialog__foot">
+        <button type="button" class="btn btn--secondary" data-action="close-dialog">Cancel</button>
+        <button type="submit" class="btn btn--primary">Propose decision</button>
+      </footer>
+    </form>
+  </dialog>
+
+  <script src="app.js"></script>
+</body>
+</html>
