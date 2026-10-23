@@ -1,4 +1,4 @@
-# Mysa — Creative Collaboration Workspace
+# Mysa - Creative Collaboration Workspace
 
 **A frontend prototype for a workspace that connects creative direction, feedback, decisions, design versions, and final approval.**
 
