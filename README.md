@@ -4,7 +4,7 @@
 
 ## Live Demo
 
-[Explore Mysa][(https://mysa-workspace.netlify.app)]
+Explore Mysa [(https://mysa-workspace.netlify.app)]
 
 ## About the Project
 Mysa explores how designers and clients can keep feedback, revision decisions, and approval connected throughout a creative project.
